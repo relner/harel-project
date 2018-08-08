@@ -1,0 +1,296 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    direction: rtl;
+}
+.header{
+    background: #004080;
+    height: 45px;
+}
+.header-in,
+.boby-wrapper{
+    max-width: 980px;
+    margin: auto;
+}
+.logo-wrapper{
+    background-image: url("./img/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 99px;
+    height: 36px;
+    padding: 4px 0;
+    float: left;
+}
+.header-menu{
+    padding-top: 14px;
+}
+.header-menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.header-menu span{
+    padding: 0 10px;
+}
+
+body{
+    background-image: url("./img/bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+body, select, input{
+    color: #717171;
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+}
+.my-jambotron{
+    min-height: 38px;
+    background: #002448;
+    margin-top: 8px;
+    color: white;
+    font-size: 32px;
+    padding: 16px;
+}
+
+.stepper{
+    height: 44px;
+    margin-top: 8px;
+    background: white;
+}
+
+.step{
+    align-self: stretch;
+    padding: 14px 14px 14px 13px;
+}
+.step.selected {
+    position:relative;
+    margin-left: 10px;
+    background: #004080;
+    color: white;
+}
+
+.step.selected:before {
+    content:"\A";
+    border-style: solid;
+    border-width: 22px 25px 22px 0;
+    border-color: transparent #004080 transparent transparent;
+    position: absolute;
+    left: -15px;
+    margin: -13px -10px;
+}
+.steps{
+    display: flex;
+    align-items:center;
+}
+.helper-number{
+    padding: 4px 9px;
+    border: 1px solid #a4a7ae;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+.selected .helper-number{
+    border-color: white;
+}
+.form-body{
+    display: flex;
+    flex-flow: row wrap;
+}
+.form-body{
+    margin-top: 8px;
+}
+.side-nav{
+    position: relative;
+    width: 240px; 
+    background: #004080;
+    color: white;
+    font-size: 22px;
+    padding: 12px 10px;
+}
+.body-wrapper{
+    display: none;
+    background: white; 
+    flex: 1;
+}
+.body-wrapper.open{
+    display: block;
+}
+.body-wrapper-selecter{
+    padding: 16px 16px 16px 55px; 
+    border-bottom: 1px solid #a4a7ae;
+    position: relative;
+}
+.blue-button{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border-right: 1px solid #a4a7ae; 
+    padding: 0 6px 0 0;
+    width: 20px;
+    height: 13px;
+    background: url("./img/arrows-blue.png") no-repeat;
+    cursor: pointer;
+}
+.blue-button.open{
+    background-position: 0 -13px;
+}
+.white-button{
+    display: none;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border-right: 1px solid white; 
+    padding: 0 6px 0 0;
+    width: 20px;
+    height: 13px;
+    background: url("./img/arrows-white.png") no-repeat;
+    cursor: pointer;
+}
+.white-button.open{
+    background-position: 0 -13px;
+}
+
+.form-wrapper{
+    display: none;
+    padding: 16px;
+}
+.form-wrapper.open{
+    display: block;
+}
+
+.checkbox{
+    width: 22px;
+    height: 26px;
+    background-image: url("./img/outline-check_box_outline_blank-24px.svg");
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.checkbox.selected{
+    background-image: url("./img/outline-check_box-24px.svg");
+}
+.fields-wrap{
+    display: flex;
+}
+.fields-wrap > * {
+    padding: 10px 0;
+    flex: 1 100%;
+}
+.fields-wrap input{
+    width: calc(100% - 36px);
+    padding: 12px;
+    border: 1px solid #004080;
+}
+
+.fields-wrap select{
+    width: calc(100% - 10px);
+    padding: 12px 12px 12px 42px;
+    border: 1px solid #004080;
+}
+
+.fields-label{
+    font-weight: bold;
+    color: #004080;
+    padding: 16px 0 6px 0;
+}
+
+.radio-wrap{
+    display: flex;
+}
+.radio-wrap > *{
+    padding: 0 0 0 20px;
+}
+.radiobutton{
+    width: 22px;
+    height: 26px;
+    background-image: url("./img/outline-radio_button_unchecked-24px.svg");
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.radiobutton.selected{
+    background-image: url("./img/outline-radio_button_checked-24px.svg");
+}
+.radio-wrap-header{
+    padding-bottom: 30px;
+}
+.form-wrapper-bottom{
+    border-top: 1px solid #a4a7ae;
+    padding-top: 16px;
+    color: #004080;
+}
+.footer{
+    height: 44px;
+    margin-top: 8px;
+    background: white;
+}
+.footer-button{
+    padding: 14px 26px 13px 26px; 
+    background: #004080; 
+    float: left; 
+    color: white;
+    cursor: pointer;
+}
+
+select {
+    border-radius: 0;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('./img/select-arrow.png') no-repeat;
+}
+  
+select::-ms-expand {
+    display: none; 
+}
+
+
+@media screen and (max-width: 800px) {
+
+    body{
+        background: #bdc8d4;
+    }
+    .my-jambotron,
+    .stepper,
+    .form-body,
+    .footer
+    {
+        margin: 8px;
+        margin-bottom: 0;
+    }
+
+    .header-in{
+        padding: 0 8px;
+    }
+
+    .step-title{
+        display: none;
+    }
+    .selected .step-title{
+        display: inline-block;
+    }
+    .form-body > *{
+        flex: 1 auto;
+    }
+    .fields-wrap {
+        flex-flow: row wrap;
+    }
+    .fields-wrap > *{
+        padding: 5px 0;
+    }
+    .fields-label{
+        padding-top: 4px;
+    }
+    .body-wrapper-selecter{
+        display: none;
+    }
+    .white-button{
+        display: block;
+    }
+    .header-menu span{
+        padding: 0 2px;
+    }
+
+}
+

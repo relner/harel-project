@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interview</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="header-in">
+            <div class="logo-wrapper"></div>
+            <div class="header-menu">
+                <a href="#">ביתוח</a>
+                <span>|</span>
+                <a href="#">פנסיה</a>
+                <span>|</span>
+                <a href="#">קרנות נאמנות</a>
+            </div>
+        </div>
+    </div>
+    <div class="boby-wrapper">
+        <div class="my-jambotron">
+            הצתרפות לקופות גמל
+        </div>
+        <div class="stepper">
+            <div class="steps">
+                <div class="step selected">
+                    <span class="helper-number">1</span>
+                    <span class="step-title">מידה כללי</span>
+                </div>
+                <div class="step">
+                    <span class="helper-number">2</span>
+                    <span class="step-title">פרטי בעל החיסכון</span>
+                </div>
+                <div class="step">
+                    <span class="helper-number">3</span>
+                    <span class="step-title">אישור וסיכום</span>
+                </div>
+            </div>
+        </div>
+        <div class="form-body">
+            <div class="side-nav">
+                <span>בחירת מסלול השקעה</span>
+                <span id="whiteButton" class="white-button"></span>
+            </div>
+            <div id="bodyWrapper" class="body-wrapper open">
+                <div class="body-wrapper-selecter">
+                    <span>באפשרותך לבחור את המסלול שבו יושקע הכסף שלך, על פי צרכיך ומידת הסיכון המתאימה לך.</span>
+                    <span id="blueButton" class="blue-button"></span>
+                </div>
+                <div id="formWrapper" class="form-wrapper open">
+                    <div>
+                        <span id="myCheckBox" class="checkbox selected"></span>
+                        <span> אני מעוניין לפצל את החיסכון שלי בין מסלולים שונים (תוכל לבצע פעולה זובהמשך התהליך)</span>
+                    </div>
+                    <div class="fields-wrap">
+                        <div>
+                            <div class="fields-label">מסלול השקעה לבחירתך</div>
+                            <select>
+                                <option>מסלול כללי - 3.07% שנתי</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <div>
+                            <div class="fields-label">
+                                <span>שם פרטי</span>
+                                <span style="color: red">*</span>
+                            </div>
+                            <input placeholder=""/>
+                        </div>
+                        <div>
+                            <div class="fields-label">
+                                <span>שם משפחה</span>
+                                <span style="color: red">*</span>
+                            </div>
+                            <input placeholder=""/>
+                        </div>
+                    </div>
+                    <div class="radio-wrap-header">
+                        <div class="fields-label">עבור מי הפוליסה?</div>
+                        <div class="radio-wrap">
+                            <div>
+                                <span class="radiobutton selected"></span>
+                                <span>עבורי</span>
+                            </div>
+                            <div>
+                                <span class="radiobutton"></span>
+                                <span>עבור אדם אחר</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-wrapper-bottom">
+                          למידה נוסף על מסלולי הההשקעה  >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-button">המשך</div>
+        </div>
+    </div>
+</body>
+</html>
